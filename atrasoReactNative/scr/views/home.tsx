@@ -1,16 +1,18 @@
-
+import Imagens from "../../img/img";
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, ImageBackground } from 'react-native';
+import styles from "../css/homeCss";
 
 const HomeScreen: React.FC<{ navigation: any }> = ({navigation}) =>{
   return (
-    <View>
-      <Text>Home Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('DesenvolvedoresScreen')}
-      />
-    </View>
+    <ImageBackground
+    source={Imagens.fundoPerfil}
+    style={styles.background}
+    resizeMode="cover"
+  >
+
+
+  </ImageBackground>
   );
 };
 

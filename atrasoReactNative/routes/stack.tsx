@@ -17,6 +17,7 @@ const Tabs = () => {
     <Tab.Navigator>
       <Tab.Screen name="home" component={HomeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="perfil" component={PerfilScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="DesenvolvedoresScreen" component={DesenvolvedoresScreen} options={{ headerShown: false }} />
     </Tab.Navigator>
   );
 };

@@ -1,9 +1,11 @@
 import React from 'react';
-import { ScrollView, View, Text, Image, TouchableOpacity, Linking , ImageBackground} from 'react-native';
+import { ScrollView, View, Text, Image, TouchableOpacity, Linking , ImageBackground,} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from '../css/desenvolvedoresCss';
 import Imagens from "../../img/img";
 
+
+ {/*  
 const profiles = [
   { 
     name: 'Thiago Monteiro', 
@@ -83,28 +85,31 @@ const profiles = [
   },
   // Adicione mais perfis conforme necessário
 ];
+*/}
 
-// const ProfileCard = ({ profile }) => (
-//   <View style={styles.card}>
-//     <Image source={profile.avatar} style={styles.avatar} />
-//     <Text style={styles.name}>{profile.name}</Text>
-//     <Text style={styles.role}>{profile.role}</Text>
-//     <View style={styles.socialIcons}>
+ {/*  
+const ProfileCard = ({profile}) => (
+  <View style={styles.card}>
+    <Image source={profile.avatar} style={styles.avatar} />
+    <Text style={styles.name}>{profile.name}</Text>
+    <Text style={styles.role}>{profile.role}</Text>
+     <View style={styles.socialIcons}>
   
-//       {/* <TouchableOpacity onPress={() => Linking.openURL(profile.links.linkedin)}>
-//         <Icon name="linkedin" size={20} style={styles.icon} />
-//       </TouchableOpacity> */}
+        <TouchableOpacity onPress={() => Linking.openURL(profile.links.linkedin)}>
+         <Icon name="linkedin" size={20} style={styles.icon} />
+       </TouchableOpacity> 
 
-//       {/* <TouchableOpacity onPress={() => Linking.openURL(profile.links.github)}>
-//         <Icon name="github" size={20} style={styles.icon} />
-//       </TouchableOpacity> */}
-// {/* 
-//       <TouchableOpacity onPress={() => Linking.openURL(profile.links.instagram)}>
-//         <Icon name="instagram" size={20} style={styles.icon} />
-//       </TouchableOpacity> */}
-//     </View> 
-//   </View>
-// );
+      <TouchableOpacity onPress={() => Linking.openURL(profile.links.github)}>
+        <Icon name="github" size={20} style={styles.icon} />
+       </TouchableOpacity> 
+
+       <TouchableOpacity onPress={() => Linking.openURL(profile.links.instagram)}>
+        <Icon name="instagram" size={20} style={styles.icon} />
+     </TouchableOpacity> 
+   </View> 
+  </View>
+);
+*/}
 
 const Desenvolvedores = () => (
     <ImageBackground
@@ -117,9 +122,10 @@ const Desenvolvedores = () => (
   
     <Text style={styles.header}>Desenvolvedores</Text>
     <View style={styles.cardsContainer}>
-      {/* {profiles.map((profile, index) => (
+     
+ {/* {profiles.map((profile, index) => (
         <ProfileCard key={index} profile={profile} />
-      ))} */}
+      ))}  */}
     </View>
  
   </View>
