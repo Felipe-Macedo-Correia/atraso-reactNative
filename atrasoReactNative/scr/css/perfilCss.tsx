@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
         width: 130,
         height: 130,
         justifyContent: 'center',
-      
         marginTop:80,
 
     },

@@ -7,6 +7,7 @@ import LoginScreen from '../scr/views/login';
 import HomeScreen from '../scr/views/home';
 import DesenvolvedoresScreen from '../scr/views/desenvolvedores';
 import PerfilScreen from '../scr/views/perfil';
+import CadastroScren from '../scr/views/cadastro';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -17,6 +18,7 @@ const Tabs = () => {
     <Tab.Navigator>
       <Tab.Screen name="home" component={HomeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="perfil" component={PerfilScreen} options={{ headerShown: false }} />
+      <Tab.Screen name="DesenvolvedoresScreen" component={DesenvolvedoresScreen} options={{ headerShown: false }} />
     </Tab.Navigator>
   );
 };
@@ -28,6 +30,7 @@ const MyStack = () => {
       <Stack.Screen name='DesenvolvedoresScreen' component={DesenvolvedoresScreen} options={{ headerShown: false }} />
       <Stack.Screen name='Perfil' component={PerfilScreen} options={{ headerShown: false }} />
       <Stack.Screen name="homeStack" component={Tabs} options={{ headerShown: false }} />
+      <Stack.Screen name="cadastro" component={CadastroScren} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

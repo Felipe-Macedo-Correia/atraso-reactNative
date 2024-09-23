@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
       help:{
         width:280,
         height:280,
-        marginBottom:30,
+        marginBottom:15,
         marginTop:30
       },
      input:{
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#545454'
      },
       inputFocused:{
-     position:'absolute',
+        position:'absolute',
         fontSize:20,
         color:'#FF8F49',
         margin:0,
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
 
       },
       conta:{
-          marginTop:'10%'
+          marginTop:'20%',
+          fontWeight:'bold'
       },
       helpText:{
         color:'#004AAD'
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
         color:'#F6A059'
       },
       buttonCad:{
-        marginTop:'10%',
+        marginTop:15,
         width:160,
         color:'#004AAD'
       },

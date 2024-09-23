@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 20,
         alignItems:'center',
-        marginLeft:50
+        marginLeft:50,
+        color:'#930d0c',
       },
       cardsContainer: {
         flexDirection: 'row',

@@ -5,7 +5,8 @@ const Imagens = {
     fundoPerfil: require("../assets/fundoPerfil.png"),
     perfil: require("../assets/imgApp/perfil.png"),
     iconCurso: require("../assets/imgApp/iconCurso.png"),
-    fundoHome: require("../assets/fundoHome.png")
+    fundoHome: require("../assets/fundoHome.png"),
+    fundoBranco:require("../assets/fundoBranco.png")
    
 }
 export default Imagens;

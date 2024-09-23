@@ -48,7 +48,7 @@ const Login: React.FC<{ navigation: any }> = ({navigation}) => {
     
     return (
         <ImageBackground
-        source={Imagens.fundo}
+        source={Imagens.fundoBranco}
         style={styles.background}
         resizeMode="cover"
       >
@@ -137,6 +137,21 @@ const Login: React.FC<{ navigation: any }> = ({navigation}) => {
 
                 //onPress={handleLogin} 
     />
+
+            <View>
+                    <View style={[styles.conta ]}>
+                        <Text>Ainda não tem cadastro?</Text>
+                        
+                    </View>
+                </View>
+                    
+                <Button
+                style={[styles.buttonCad, { backgroundColor: '#b51515' }]} // Defina a cor de fundo desejada aqui
+                color='#b51515'
+                variant="primary"
+                title="Cadastre-se" 
+                onPress={() => navigation.navigate('cadastro')} 
+                />
                     
         </View>
         </ImageBackground>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { View, Text, Button, ImageBackground } from 'react-native';
 import Scanner from "../../components/Scanner/Scanner"; // ajuste o caminho se necessário
