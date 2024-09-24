@@ -29,24 +29,16 @@ const Desenvolvedores = () => (
 
         <View style={styles.containerBase}>
         <Image source={Imagens.iconCurso} style={styles.imgIcon} />
-        <Text style={styles.nomeAvaliador}>Desenvolvimento de Sistemas</Text>
+        <Text style={styles.nomeAvaliador}>Desenvolvimento de Sistemas </Text>
+        <Text style={styles.modulo}> 2 Módulo - Manhã </Text>
         </View>
 
 
         <View style={styles.containerBase}>
-        <Image source={Imagens.perfil} style={styles.imgIcon2} />
-        <Text style={styles.nomeAvaliador}> 11111111111</Text>
+        <Image source={Imagens.iconRm} style={styles.imgIcon2} />
+        <Text style={styles.nomeAvaliador}> 25634</Text>
         </View>
 
-        <View style={styles.containerBase}>
-        <Image source={Imagens.perfil} style={styles.imgIcon2} />
-        <Text style={styles.nomeAvaliador}> 11111111111</Text>
-        </View>
-
-        <View style={styles.containerBase}>
-        <Image source={Imagens.perfil} style={styles.imgIcon2} />
-        <Text style={styles.nomeAvaliador}>End</Text>
-        </View>
 
 
         

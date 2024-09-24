@@ -66,6 +66,11 @@ textAvaliacao:{
     fontWeight:'bold',
     fontSize:12
 },
+
+modulo:{
+    marginLeft:70,
+    bottom:50
+}
    });
 export default styles;
 

@@ -8,7 +8,7 @@ import axios from 'axios';
 
 
 const Login: React.FC<{ navigation: any }> = ({navigation}) => {
-    const [emailContratante, setEmailContratante] = useState('');
+    const [rmAluno, setRmAluno] = useState('');
     const [password, setPassword] = useState('');
     const [show, setShow] = useState(false);
     const [message, setMessage]= useState ('')
@@ -16,35 +16,32 @@ const Login: React.FC<{ navigation: any }> = ({navigation}) => {
 
    // Defina a função handleLoginPress para campos obrigatórios
 
- {/*  */}
-//    const handleLogin = async () => {
-//     if (!emailContratante || !password) {
-//         setMessage('Preencha todos os campos');
-//         return;
-//     }
+    const handleLogin = async () => {
+     if (!rmAluno || !password) {
+        setMessage('Preencha todos os campos');
+         return;
+     }
+     console.log("RM:", rmAluno);
+     console.log("Password:", password);
+     try {
+         const response = await axios.post('http://localhost:8000/api/auth', {
+            setRmAluno:setRmAluno,
+             password:password,
+         });
 
-//     console.log("Email:", emailContratante);
-//     console.log("Password:", password);
+        console.log("Resposta da API:", response.data);
 
-//     try {
-//         const response = await axios.post('http://localhost:8000/api/auth', {
-//             emailContratante:emailContratante,
-//             password:password,
-//         });
+         if (response.data && response.data.status === 'Sucesso') {
+             navigation.navigate('homeStack', { screen: 'home' });
+         } else {
+             setMessage('Credenciais incorretas, tente novamente.');
+         }
 
-//         console.log("Resposta da API:", response.data);
-
-//         if (response.data && response.data.status === 'Sucesso') {
-//             navigation.navigate('homeStack', { screen: 'home' });
-//         } else {
-//             setMessage('Credenciais incorretas, tente novamente.');
-//         }
-
-//     } catch (error) {
-//         console.error('Erro ao fazer login:', error);
-//         setMessage('Erro ao fazer login. Verifique suas credenciais e tente novamente.');
-//     }
-// };
+   } catch (error) {
+         console.error('Erro ao fazer login:', error);
+         setMessage('Erro ao fazer login. Verifique suas credenciais e tente novamente.');
+     }
+    }
     
     return (
         <ImageBackground
@@ -58,7 +55,7 @@ const Login: React.FC<{ navigation: any }> = ({navigation}) => {
             <View style={styles.input}>
                 <FloatingLabelInput
                     label="RM"
-                    value={emailContratante}
+                    value={rmAluno}
                     staticLabel
                     hintTextColor={'#aaa'}
                     hint="exemple@exemple.com"
@@ -86,7 +83,7 @@ const Login: React.FC<{ navigation: any }> = ({navigation}) => {
                         color: '#000',
                         paddingHorizontal: 10,
                     }}
-                    onChangeText={setEmailContratante}
+                    onChangeText={setRmAluno}
                 />
                      <Text style={styles.errorMessage}>{message}</Text> 
 
@@ -162,4 +159,3 @@ export default Login;
 function setError(arg0: string) {
     throw new Error('Function not implemented.');
 }
-

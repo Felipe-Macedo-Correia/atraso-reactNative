@@ -5,7 +5,7 @@ import styles from '../css/desenvolvedoresCss';
 import Imagens from "../../img/img";
 
 
- {/*  
+  
 const profiles = [
   { 
     name: 'Thiago Monteiro', 
@@ -85,7 +85,7 @@ const profiles = [
   },
   // Adicione mais perfis conforme necessário
 ];
-*/}
+
 
  {/*  
 const ProfileCard = ({profile}) => (
