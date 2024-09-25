@@ -24,8 +24,8 @@ const Tabs = () => {
 };
 const MyStack = () => {
   return (
-    <Stack.Navigator initialRouteName='HomeScreen'>
-      <Stack.Screen name='LoginScreen' component={LoginScreen} options={{ headerShown: false }}/>
+    <Stack.Navigator initialRouteName='LoginScreen'>
+      <Stack.Screen name='login' component={LoginScreen} options={{ headerShown: false }}/>
       <Stack.Screen name='HomeScreen' component={HomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name='DesenvolvedoresScreen' component={DesenvolvedoresScreen} options={{ headerShown: false }} />
       <Stack.Screen name='Perfil' component={PerfilScreen} options={{ headerShown: false }} />
