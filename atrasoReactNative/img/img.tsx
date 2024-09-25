@@ -7,7 +7,7 @@ const Imagens = {
     iconCurso: require("../assets/imgApp/iconCurso.png"),
     fundoBranco:require("../assets/fundoBranco.png"),
     iconRm: require("../assets/imgApp/iconRm.png")
-   
+    
 }
 export default Imagens;
 
