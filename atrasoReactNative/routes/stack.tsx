@@ -8,6 +8,7 @@ import HomeScreen from '../scr/views/home';
 import DesenvolvedoresScreen from '../scr/views/desenvolvedores';
 import PerfilScreen from '../scr/views/perfil';
 import CadastroScren from '../scr/views/cadastro';
+import ScannerScreen from '../components/Scanner/Scanner';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -16,6 +17,7 @@ const Tab = createBottomTabNavigator();
 const Tabs = () => {
   return (
     <Tab.Navigator>
+      <Tab.Screen name="scanner" component={ScannerScreen} options={{ headerShown: false }} />
       <Tab.Screen name="home" component={HomeScreen} options={{ headerShown: false }} />
       <Tab.Screen name="perfil" component={PerfilScreen} options={{ headerShown: false }} />
       <Tab.Screen name="DesenvolvedoresScreen" component={DesenvolvedoresScreen} options={{ headerShown: false }} />

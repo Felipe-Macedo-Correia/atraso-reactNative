@@ -8,7 +8,7 @@ import Imagens from "../../img/img"
 const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <ImageBackground
-      source={Imagens.fundoHome}
+      source={Imagens.fundo}
       style={styles.background}
       resizeMode="cover"
     >
